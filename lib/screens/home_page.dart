@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
             if (state is DataErrorState) {
               context.showErrorSnackBar(context, state.msg);
             } else if (state is DatabaseModifiedState) {
+              context.read<DataBloc>().add(GetMemberDataEvent());
               context.showSuccessSnackBar(context, state.msg);
             }
           },

@@ -49,12 +49,10 @@ class AddEditBottomSheet extends StatelessWidget {
             onPressed: () {
               if (isEdit!) {
                 context.read<DataBloc>().add(EditMemberEvent(gender: genderController.text, member: member!, name: nameController.text));
-                context.read<DataBloc>().add(GetMemberDataEvent());
                 Navigator.pop(context);
               } else {
                 context.read<DataBloc>().add(AddMemberEvent(
                     gender: genderController.text, name: nameController.text));
-                context.read<DataBloc>().add(GetMemberDataEvent());
                 Navigator.pop(context);
               }
             },

@@ -21,7 +21,6 @@ class DataBloc extends Bloc<DataEvent, DataState> {
     emit(LoadingState());
 
     try {
-      await Future.delayed(const Duration(seconds: 1));
       List<Member> memberList = await serviceLocator.fetchMemberData();
       emit(DataRecivedState(memberList: memberList));
     } catch (e) {
@@ -34,7 +33,7 @@ class DataBloc extends Bloc<DataEvent, DataState> {
   FutureOr<void> addMember(AddMemberEvent event, Emitter<DataState> emit) async{
     if (event.name.trim().isNotEmpty && event.gender.trim().isNotEmpty && (event.gender.toLowerCase() == 'male' || event.gender.toLowerCase() == 'female')) {
       try {
-      serviceLocator.insertData(name: event.name, gender: event.gender);
+      await serviceLocator.insertData(name: event.name, gender: event.gender);
       emit(DatabaseModifiedState(msg: "Succesfuly added ${event.name} to database."));
     }catch(e) {
       print(e);
@@ -45,10 +44,10 @@ class DataBloc extends Bloc<DataEvent, DataState> {
     }
   }
 
-  FutureOr<void> editMember(EditMemberEvent event, Emitter<DataState> emit) {
+  FutureOr<void> editMember(EditMemberEvent event, Emitter<DataState> emit) async{
     if (event.name.trim().isNotEmpty && event.gender.trim().isNotEmpty && (event.gender.toLowerCase() == 'male' || event.gender.toLowerCase() == 'female')) {
       try {
-      serviceLocator.editData(member: event.member, name: event.name, gender: event.gender);
+      await serviceLocator.editData(member: event.member, name: event.name, gender: event.gender);
       emit(DatabaseModifiedState(msg: "Succesfuly changed ${event.member.name}'s name to ${event.name} and gender to ${event.gender}."));
       Future.delayed(const Duration(seconds: 1));
     }catch(e) {
@@ -60,9 +59,9 @@ class DataBloc extends Bloc<DataEvent, DataState> {
     }
   }
 
-  FutureOr<void> deleteMember(DeleteMemberEvent event, Emitter<DataState> emit) {
+  FutureOr<void> deleteMember(DeleteMemberEvent event, Emitter<DataState> emit) async{
     try {
-      serviceLocator.deleteData(member: event.member);
+      await serviceLocator.deleteData(member: event.member);
       emit(DatabaseModifiedState(msg: "${event.member.name} has been removed from the database."));
       Future.delayed(const Duration(seconds: 1));
     } catch (e) {

@@ -12,11 +12,11 @@ class DBSerivce {
     return List.generate(data.length, (index) => Member.fromMap(data[index]));
   }
 
-  void insertData({required String name, required String gender}) async {
+  Future<void> insertData({required String name, required String gender}) async {
     await supabase.from('member').insert({"name": name, 'gender': StringUtils.capitalize(gender)});
   }
 
-  void editData({
+  Future<void> editData({
     required String name,
     required String gender,
     required Member member,
@@ -26,7 +26,7 @@ class DBSerivce {
         .update({'name': name, 'gender': StringUtils.capitalize(gender)}).match({'id': member.id});
   }
 
-  void deleteData({required Member member}) async {
+  Future<void> deleteData({required Member member}) async {
     await supabase.from('member').delete().match({'id': member.id});
   }
 }
