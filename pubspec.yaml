@@ -1,0 +1,29 @@
+name: connect_suba_and_fluttter
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  awesome_snackbar_content: ^0.1.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.4
+  flutter_dotenv: ^5.1.0
+  flutter_svg: ^2.0.10+1
+  get_it: ^7.6.7
+  supabase_flutter: ^2.3.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  assets:
+    - image\duck-2-svgrepo-com.svg
+    - image\duck-3-svgrepo-com.svg
+    - .env
+  uses-material-design: true
