@@ -4,9 +4,10 @@
 <img width="789" alt="Screenshot 2024-03-13 at 6 15 05 AM" src="https://github.com/shaimaathu/DB-CRUD-Lab/assets/155615972/8eede3a5-6bea-42a4-bc44-1b430e596ca1">
 
 Display all the members.
-The edit icon will allow the user to change the member's data.
-The delete icon will allow the user to delete a member.
-The add button will allow the user to add a new member.
+
+- The edit icon will allow the user to change the member's data.
+- The delete icon will allow the user to delete a member.
+- The add button will allow the user to add a new member.
 
 
 <img width="357" alt="Screenshot 2024-03-13 at 6 09 57 AM" src="https://github.com/shaimaathu/DB-CRUD-Lab/assets/155615972/49da1780-f212-4ff1-93e5-f29eae2c05a6">
