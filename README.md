@@ -4,14 +4,15 @@ Finish the Supabase lab we did in class. Which is creating a Flutter project tha
 
 Here are the tasks you need to perform:
 - Add a new member to the table
-<img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/5499e840-e1a4-4ea6-9d1c-262ff72cb988.png" width="300" alt="Screenshot 1">
-<img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/bd47c3fd-18eb-47bb-ac0f-b811e990ddc2.png" width="300" alt="Screenshot 2">
+![Screenshot_1710286867](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/fc0ae031-f4da-417b-a6dd-f9676cfceae8)
+![Screenshot_1710286876](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/52e9b7f5-143f-46f6-93a1-5b2cfd5b2e54)
 - Update an existing member
-<img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/76e3fda6-a6de-4e79-bb0c-3852b23baadf.png" width="300" alt="Screenshot 3">
-<img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/a4430f89-565b-4a93-9947-85b3357a0f52.png" width="300" alt="Screenshot 4">
+![Screenshot_1710286903](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/5830d652-eff6-41f3-a3ad-debb1498e444)
+![Screenshot_1710286913](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/582b0167-3cc4-42ba-aeb1-e1b5c3b9de83)
 - Display all registered members
- <img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/0a950c27-98aa-463c-b1e9-80ced18968a5.png" width="300" alt="Screenshot">
+![Screenshot_1710286845](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/bd8a962c-cee4-4aba-b881-c84ca3bd1bb6)
 - Remove a member from the table
-<img src="https://github.com/Trajoon/DB-CRUD-Lab/raw/main/assets/153893124/ebd99d51-f5ad-437d-843f-d00e31686e3b.png" width="300" alt="Screenshot 5">
+![Screenshot_1710315458](https://github.com/Trajoon/DB-CRUD-Lab/assets/153893124/c8e07b5c-b089-4068-8f18-81e2e4967474)
+
 
 
